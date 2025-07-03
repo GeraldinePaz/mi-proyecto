@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoFix - Reparación de Vehículos a Domicilio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">AutoFix – Reparación de Vehículos a Domicilio</h1>
+
+    <!-- Servicios -->
+    <section class="mb-5">
+      <h3>Servicios y Precios</h3>
+      <div class="row text-center">
+        <div class="col-md-4 servicio">
+          <img src="1.jpg" alt="Cambio de aceite">
+          <p><strong>Cambio de aceite</strong><br>Precio: $500 MXN</p>
+        </div>
+        <div class="col-md-4 servicio">
+          <img src="2.JPG" alt="Revisión de frenos">
+          <p><strong>Revisión de frenos</strong><br>Precio: $700 MXN</p>
+        </div>
+        <div class="col-md-4 servicio">
+          <img src="3.JPG" alt="Diagnóstico eléctrico">
+          <p><strong>Diagnóstico eléctrico</strong><br>Precio: $600 MXN</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formulario -->
+    <section class="formulario">
+      <h3 class="mb-3">Solicitar Reparación</h3>
+      <form>
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre del Cliente</label>
+          <input type="text" class="form-control" id="nombre" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="tipo" class="form-label">Tipo de Reparación</label>
+          <select class="form-select" id="tipo" required>
+            <option selected disabled>Selecciona un servicio</option>
+            <option value="aceite">Cambio de aceite</option>
+            <option value="frenos">Revisión de frenos</option>
+            <option value="electrico">Diagnóstico eléctrico</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="descripcion" class="form-label">Descripción</label>
+          <textarea class="form-control" id="descripcion" rows="3" required></textarea>
+        </div>
+
+        <div class="mb-3">
+          <label for="fecha" class="form-label">Agendar Cita</label>
+          <input type="date" class="form-control" id="fecha" required>
+        </div>
+
+        <h5 class="mt-4">Información de Pago (simulado)</h5>
+
+        <div class="mb-3">
+          <label for="tarjeta" class="form-label">Número de tarjeta</label>
+          <input type="text" class="form-control" id="tarjeta" placeholder="**** **** **** 1234" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="titular" class="form-label">Nombre del titular</label>
+          <input type="text" class="form-control" id="titular" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="cvv" class="form-label">CVV</label>
+          <input type="text" class="form-control" id="cvv" maxlength="3" required>
+        </div>
+
+        <button type="submit" class="btn boton-confirmar">Confirmar Solicitud</button>
+      </form>
+    </section>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
